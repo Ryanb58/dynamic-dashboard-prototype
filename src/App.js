@@ -10,6 +10,7 @@ import Dashboard1 from './components/Dashboard1';
 import Dashboard2 from './components/Dashboard2';
 import Chart1 from './components/Chart1';
 import Dashboard3 from './components/Dashboard3';
+import Dashboard4 from './components/Dashboard4';
 
 
 export default function App() {
@@ -33,12 +34,18 @@ export default function App() {
             <li>
               <Link to="/dashboard3">Dashboard 3</Link>
             </li>
+            <li>
+              <Link to="/dashboard4">Dashboard 4</Link>
+            </li>
           </ul>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+        <Route path="/dashboard4">
+            <Dashboard4 />
+          </Route>
         <Route path="/dashboard3">
             <Dashboard3 />
           </Route>
